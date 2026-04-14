@@ -1,0 +1,1359 @@
+fileFormatVersion: 2
+guid: 1e62ca99675147947a386f1062668749
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 152
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32aa4833a875380428631271b6041ea9
+      internalID: -300735612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 152
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86d334bdff37c84c856a5e9b6b83589
+      internalID: 1504593926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 152
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a05014696e9bb94589d93dc6c8b073c
+      internalID: 767299242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_3
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 152
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a326d7143917124ba2d3e1f476569ea
+      internalID: -984224200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 152
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ef9c441010c084faf64547d109f3f5
+      internalID: 228712434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 90
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce207e2c10860741a9b1a1a8ef4f85c
+      internalID: -1798467835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 90
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0019510154a99704497250536c774722
+      internalID: -163191849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_7
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 90
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d4189ee339ea945a1141a0a45c1c32
+      internalID: -1968957775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_8
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 90
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85dbb77e8082dc4ebc76aff426735ae
+      internalID: -2070071757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 90
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0250c82e0eaf34bbd82ed933eac09b
+      internalID: -451181021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 47
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b6474796ff6934e8405c6d8fbb70c3
+      internalID: 1432710237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 49
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54de9c776811f840ae3f691e270c9b7
+      internalID: -792642186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 49
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fde520f60ddfab4faff8986f8973fd1
+      internalID: -1548139426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 49
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce8ac2e5996b834683aeac195c01584
+      internalID: 529606040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_14
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 49
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b49e923e9c855545954a34124c2359d
+      internalID: -77333985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 47
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5addecf2e0d226445a70355272604edb
+      internalID: -2115978391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_16
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 49
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5348c1d07b091a74faf6de07962fac6d
+      internalID: 890585604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 49
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634e6a940d80be84690db783032fc2bf
+      internalID: -1697412304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_18
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 47
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b79dd49cf3f1b4a93bada34e2b02b9
+      internalID: 371566054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_19
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 49
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec8b070f20f0342832996d6dc0dcc9
+      internalID: -671680472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_20
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 34
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed34408aadf14c54aada9cefb90589cf
+      internalID: 2044405781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_21
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 34
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e8767cd9f2d1649af4cf772a377d9b
+      internalID: -892492693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 34
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698d6e8e7b6bbbe4e9355e2dd0b352be
+      internalID: -2020033534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_23
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 34
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef14e3a8a33cd54baedeacaf89e1311
+      internalID: -1529927934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_24
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 34
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6019b41cdd502e4bba7b7fad9f1b3de
+      internalID: -1355482824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_25
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 34
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab2360dd58dfd64fa4f759518e6d532
+      internalID: -1660120613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 34
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ff0148a6944624299d093f0bbe3d32
+      internalID: 1403482534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 34
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366a7fc58095a024d9901d9ec9f25b87
+      internalID: -1272898470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_28
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 34
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc91a9e7c0495bf4ab065e22d9330a02
+      internalID: -874549566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_29
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 34
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2be55366eebc2d4ca25c7962c31eb75
+      internalID: 434192570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_30
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 35
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2a90c5a2796ed4d8fb1acd2fadbbff
+      internalID: 1059274372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_31
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 34
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4565a6eb4d7e17349a48ad3247c9dc9e
+      internalID: 1903506513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_32
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 32
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7260a83631e8dfa43a44b8c4cf073835
+      internalID: 2141600147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 34
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6224d17266bfa734fbe5fada56dc15cb
+      internalID: -1944946546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_34
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 34
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8479b5aaac1740a45a70c0a84b69d6a0
+      internalID: -575031577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_35
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 34
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218b4ee511e79934f8d1ac4fe51ada2e
+      internalID: 824968878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_36
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140270a0f7f626a45895ae91ae7368a3
+      internalID: -1029023703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010a6fe9dc69abb4198f21fa959e3969
+      internalID: -938493423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_38
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 20
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ab640be91b2624eaa1fc92c21cef05
+      internalID: -1278564601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_39
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 20
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d7be29c0dbf914899659f18dc2067a
+      internalID: 671682000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 20
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2c2dbe90c01c3498e9661770c3d570
+      internalID: 1975172161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_41
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 20
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd812c073a31dd54db471c8426285f35
+      internalID: -446759649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_42
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 20
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1feeaa36a6a649549920b474b164434f
+      internalID: -832763567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_43
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 20
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46c60a9214c8354abf9553f7a77a39a
+      internalID: -2071606533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_44
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 20
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185cc83eff58e644093299bc9db7bf38
+      internalID: -518850101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5556bb22efc999d4e94187cab0ae7433
+      internalID: 79826898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_46
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 20
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef03f3160980d834e8101fc71a780c3d
+      internalID: 780005393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_47
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 21
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399bdfec0e2c20f42b314c810eddcd32
+      internalID: -1551386331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_48
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 20
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f110af4484b134c955c6dc63f1795f
+      internalID: 608194633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_49
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 20
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f85522634e290c4ba1510d8774eb943
+      internalID: 769524186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_50
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 20
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ad23bc19e8b9b4eb6e5309e4edf279
+      internalID: 121005513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_51
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8f20588bb284d4396d1d8a0134b65e
+      internalID: 1141961326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_52
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 20
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04b071d336fef644a7a4131fcf89741
+      internalID: 2049994161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_53
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 20
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1175c56940789a0449157367980d718d
+      internalID: -403537580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_54
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e808915cb21f14409a387c3b6924449
+      internalID: -1139999580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_55
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 20
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174cbdeef357d7c449a4a95526d51517
+      internalID: -782477740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_0: -300735612
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_1: 1504593926
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_10: 1432710237
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_11: -792642186
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_12: -1548139426
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_13: 529606040
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_14: -77333985
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_15: -2115978391
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_16: 890585604
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_17: -1697412304
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_18: 371566054
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_19: -671680472
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_2: 767299242
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_20: 2044405781
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_21: -892492693
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_22: -2020033534
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_23: -1529927934
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_24: -1355482824
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_25: -1660120613
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_26: 1403482534
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_27: -1272898470
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_28: -874549566
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_29: 434192570
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_3: -984224200
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_30: 1059274372
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_31: 1903506513
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_32: 2141600147
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_33: -1944946546
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_34: -575031577
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_35: 824968878
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_36: -1029023703
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_37: -938493423
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_38: -1278564601
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_39: 671682000
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_4: 228712434
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_40: 1975172161
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_41: -446759649
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_42: -832763567
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_43: -2071606533
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_44: -518850101
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_45: 79826898
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_46: 780005393
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_47: -1551386331
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_48: 608194633
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_49: 769524186
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_5: -1798467835
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_50: 121005513
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_51: 1141961326
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_52: 2049994161
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_53: -403537580
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_54: -1139999580
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_55: -782477740
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_6: -163191849
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_7: -1968957775
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_8: -2070071757
+      Arcade - 1943 - The Battle of Midway - Bosses - Daihiyru_9: -451181021
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

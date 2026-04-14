@@ -1,0 +1,4549 @@
+fileFormatVersion: 2
+guid: 6fea459eb7d88c240bd825ed69329f1d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 459
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8046c8c19ecdc3f44b8ff5e6f2ca56a6
+      internalID: -927451446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 459
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6302082aa2fff174eb20b35299599719
+      internalID: -32762517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 459
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0fd447fe0daf04aa41903ddfcf9a43
+      internalID: -886250647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_3
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 459
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f2745b739701e4087ca104057bfdd0
+      internalID: 1976282342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 459
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373fbc56b7a170346aa7b5d28933753c
+      internalID: -635008950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_5
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 459
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e2b75240c598440bdff79d66c88e90
+      internalID: -985593332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_6
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 219
+        width: 50
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eceb90b6ffb2ead4284f2d853c8bb129
+      internalID: -1023697464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 440
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61998b952ac66fe46a305ff13a805880
+      internalID: 326973057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_8
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 440
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0784ebf775a0c841a3f3a7b5e6c00a7
+      internalID: 1952828416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_9
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 440
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41fc73b3ee70b547b8487999f4435c1
+      internalID: -1625822136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_10
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 440
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bbc84a9f958bb4db502eeb39844b80
+      internalID: 1411257573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 440
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57700e80a21aa6c419d12cf556b50b50
+      internalID: -1938138029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_12
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 442
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b48e06a5c8e5b4986c11a95a7913aa
+      internalID: 1677224234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_13
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 442
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2342e23b8234a459c5820cb578d80f
+      internalID: -151317887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_14
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 442
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b51ba89243406478e590767a0b005f
+      internalID: -1885736824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_15
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 442
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6c6e906f13e8b41b631db0b04fb647
+      internalID: -193983722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_16
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 442
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2b4b0bacc512041ad282b356870375
+      internalID: -1116784349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_17
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 223
+        width: 54
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7eee062f2245049aa664bfa25f0b8a
+      internalID: -2101005861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_18
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 421
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b3d87e2a611e345b21650cf5d1d729
+      internalID: -1605587124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_19
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 421
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3335782cea695746896bd7c804d7809
+      internalID: -309224708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_20
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 421
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7794eae2f3d3a87409e6d86434d8fe1a
+      internalID: 453656935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_21
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 421
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82eb3acd550f9248864a62d2adc6292
+      internalID: 189515614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_22
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 421
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46ab70216ac733488d2ed5a77858fcf
+      internalID: 473696817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_23
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 425
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b6bab9352dd1749b10c8c1c2fcc6b0
+      internalID: -296889981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_24
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 426
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f5752eae64cdc4d947fae13e968b49
+      internalID: -1381270786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_25
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 425
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a3d4c0226d7734a895a1e2390547af
+      internalID: -145802911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_26
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 426
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e5ada1df31bc44d9103a3d03c2763e
+      internalID: -321850665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_27
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 397
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950a21e4bc9f64047959ba3f3b815016
+      internalID: 33946462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_28
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 397
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe013b1f97c644f44a02383a3395ef30
+      internalID: 2092456717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_29
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 399
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b67fb5dab8bf643b4f5fd3cff9356e
+      internalID: -205336129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_30
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 398
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2ff882fbbfeea48b61016415aba1fd
+      internalID: 292700619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_31
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 396
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de949bbe4f614943aaa9e948fc25add
+      internalID: -1724463949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_32
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 395
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1434056c9c606f47b6a4cb13eb06634
+      internalID: 752769966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_33
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 398
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c20047911e05df49bfcdef0c2b81bf5
+      internalID: 356610936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_34
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 400
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e716c89350a0c8f438a990ce50dd87b0
+      internalID: 1446428209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_35
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 378
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6924561103dbec41b8c412a659ad260
+      internalID: -120962072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_36
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 379
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e77e5581b188744fa13c44f62ca5153
+      internalID: 839252644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_37
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 378
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa1cf9e8af07894da6c3b35a66bbbbe
+      internalID: -468389309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 379
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126a08f419d9826469617a252d7fdf7b
+      internalID: -824083840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_39
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 375
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2633e885a331f649bfbddb63d7b1e7f
+      internalID: -725084244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_40
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 380
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24386c00a5897324d8bff5d1fdef8a0b
+      internalID: -1965899146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_41
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 378
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1174e45d98330342abec6dc72673b98
+      internalID: -230611175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_42
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 354
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ee7adc3f6872b4e9664da5f282f851
+      internalID: -1047999134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_43
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 355
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fb5bd50980dfa439cd6f67f17d0a45
+      internalID: -1888050428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_44
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 356
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035a273f625b69c45bc80e8304c926c7
+      internalID: 532405039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_45
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 357
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499e688d278da9841885f08bac0d93cd
+      internalID: -1164493127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_46
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 355
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cae88d12d5acb4a813f124d8965ff9
+      internalID: 2001959436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_47
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 356
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825ef592893e315479de21f1a8d551e5
+      internalID: 1080647441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_48
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 357
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a50ce70e9ccd6b4394cb3bae3ed1373
+      internalID: -864956521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_49
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 357
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f14b59203e13a4eb6efadee410c414
+      internalID: -513293747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_50
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 322
+        width: 44
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617efd85dc182ec4fa36f87674e06b67
+      internalID: 1274918399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_51
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 322
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4716f4a1e21ff474e819c4261bfda998
+      internalID: 610076909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_52
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 322
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb31b8a850226de4eb1a7479c15986b1
+      internalID: -229153607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_53
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 323
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce55d39541655e4aa7307cfee1d7ecd
+      internalID: 2090621993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_54
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 274
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d04c064f50ccfe4199dc9dd33f504fb
+      internalID: -1256969517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_55
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 274
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f9a61f8f8b38445a45470e45407dbe
+      internalID: 332772178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_56
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 274
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c8644a44cc0564ca84532d5b668a1d
+      internalID: -88150293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_57
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 274
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c277affe5530904d938cb5ce302a4bf
+      internalID: 49050824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_58
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 274
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d47fb271828e294dacf16bad2fb6b4e
+      internalID: -968201042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_59
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 274
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32908a45a069c8a48a794b80ecfdbc29
+      internalID: -273098365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_60
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 274
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9242af67d43431647989bef0cc455333
+      internalID: 1868426991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_61
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 274
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dd3878ec4763248acedc8d27fcdb11
+      internalID: 2135094766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_62
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d92d896160f6545aa2305d042a69d0
+      internalID: 1260192754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_63
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4e799bcb67d4440a5c186a026790a6
+      internalID: 1233369561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_64
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a5bafb9f864bd4a955b7c1be5d7c13
+      internalID: -1877791831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_65
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503caa6679f2e4e4fbc67e80eb62d3d3
+      internalID: -1488935853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_66
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10de630c5a1780e4794ef03974637b7e
+      internalID: 1274285524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9e0ca27613a314f9c4fcd6e2e31307
+      internalID: 1332760887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_68
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e131054f7e6a5c04db9769b8316effc6
+      internalID: 1165381763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_69
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fcf45cffcdef543b77acf2e5d17051
+      internalID: 845872214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_70
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 208
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c846b1391caad488e355bf781f00db
+      internalID: -1848445520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_71
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 209
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05e46313ab51ab4d95ef129c684505b
+      internalID: 1179872058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_72
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88622aa704e00840adb1253f721548e
+      internalID: -725141033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_73
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 210
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd944b1d01bf834eae48b2c996f1964
+      internalID: 1625284273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_74
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663270fdc7c199242adfc956e70dd367
+      internalID: 691341206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_75
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 210
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e3dc6f47eef334c97ea803a84eccaa
+      internalID: -204984266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_76
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 208
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fe485c4c2830e4cbd4097ea49597b5
+      internalID: 62814215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_77
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 209
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44aa3d914024f75408dc975990ec19b5
+      internalID: 1742791545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 194
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d833cc02bcd17a940a1be92ac29bbcf9
+      internalID: -546112322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_79
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 210
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702a2996d7571ea439ec1fb3f5b0c38a
+      internalID: 439677702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_80
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 187
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356b88b72cfd9d441af9d5130722489b
+      internalID: 1687255520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_81
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 209
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111280ac26c427a49a1fda262e6ad688
+      internalID: 653956016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_82
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 187
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd723ad9bb0ef646b5fda4f3efc5c00
+      internalID: 1538350348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_83
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 202
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84553103a0a30ab4788de71971bfe444
+      internalID: -1005916914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_84
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 200
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083567d2547352a44abb31eb22a90a1f
+      internalID: 590183235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_85
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 202
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d738b30c8820eb4439e5e60f3759ca70
+      internalID: -1493026875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_86
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 202
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4384a29b6fc97f3439b97bd968328ef7
+      internalID: -2103728797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_87
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 202
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318dd11c06b1e1448ac8e42272aacba8
+      internalID: 1000374144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_88
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 202
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348584ef273f336489b5bd0f5ae1a6e4
+      internalID: 1685058256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_89
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 202
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982a98de4084f39429b3a7afd7e54f3f
+      internalID: -1623522530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_90
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 202
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdd372dbff0fdb43b09c8bf9a0ba58d
+      internalID: -1692476174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_91
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 200
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919f062c35b20b9439b1043898aa092c
+      internalID: 212525472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_92
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 203
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181987fe6bf648043b3187cb94864e5e
+      internalID: 1132023189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_93
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 202
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5845246cd23cd4598c055bc9e20a07
+      internalID: 1619682111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_94
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 190
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc9bd1bf392ab74295b54c1a5fe788f
+      internalID: -675799941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_95
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 190
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1f7a8f049af7f429391815cc15445e
+      internalID: -190887902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_96
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 193
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269310ae54c5f1149913f6ca79ad1dd6
+      internalID: 2002875957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_97
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 191
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af994c795184114dbfb1f9a4c8466f9
+      internalID: -1890226885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_98
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 190
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db78187635105a4284b5c96ce346236
+      internalID: 658124975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_99
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 190
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d948e5d8fcd1324e9cc15378898230e
+      internalID: -883737002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_100
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 190
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c13785bd6cbed46830527563543b6d
+      internalID: -202912123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_101
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 195
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731474f588c67534db97524c0d811cb2
+      internalID: 1519424450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_102
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 195
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c1a1cb58c1ee34795b91f08e9dc083
+      internalID: -273296973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_103
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 195
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435e67f5ad17233419e1621dfcd819ce
+      internalID: -341527100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_104
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 194
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34141552ca7d7e34b8241e0ad71b13d0
+      internalID: -938990199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_105
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 194
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4630e778a2168874a9912e70b44ac353
+      internalID: 1640394183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_106
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 187
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc65dd73d1550bd4388165b1f0d1c360
+      internalID: -595635506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_107
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 188
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e22b160e307a444b401f7ff7f2a40c
+      internalID: -2039009089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_108
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 186
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da787f119768e547b103de70c4480be
+      internalID: 1589329153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_109
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 186
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34e4445784f13941b3da2fe84f701c0
+      internalID: 888422792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_110
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 189
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20f0842adf7b77478deb3e833eb4c35
+      internalID: -1702352307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_111
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 186
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19438afbd988d0c48bc73c15ad733cbf
+      internalID: -2069983166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_112
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 186
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baea36a5d4a151c479f1b13709238169
+      internalID: 1547220633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_113
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 186
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d9561d2df086f498f5a65983a8ba7c
+      internalID: 190387912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_114
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 184
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80605cff0f0a2304d9f84047b748726f
+      internalID: -1422678246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_115
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 186
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca85c4ae4e73c6b45acfee2b7304e5b6
+      internalID: 1808570254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_116
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 186
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42459dec468b01142ab303f235132465
+      internalID: 1914333817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_117
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 186
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52695871dd095a0469c343d551e2b3d1
+      internalID: -619877305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_118
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 165
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17381896eaa452c46bd685ff8ae1156b
+      internalID: -1792835483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_119
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 165
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29a943d65e22894bbb3f8f4a4ad3f62
+      internalID: -1294038584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_120
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 165
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960a07325acd01045a478489ffabfa6e
+      internalID: 2044625262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_121
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 165
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3569d1a472659f44cb13bb90d1820338
+      internalID: 139428833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_122
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 166
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421f50e4c0c9fe44da28d54b4c1ba440
+      internalID: 1427846677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_123
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 166
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33473642626c06428d9848072ff4159
+      internalID: 1390485283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_124
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 166
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a4f59015b5690488b31baf2aea0beb
+      internalID: 318689992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_125
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 166
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcaab3c506643bf49881bd25057727dd
+      internalID: 1247410354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_126
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3706adb4b48a12842b21f25bcc4cd5b2
+      internalID: 1907253130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_127
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c319b3d2e90144cb14345cd57bfdd4
+      internalID: 1881304191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_128
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17e790398535f748845605021c06006
+      internalID: 2033805789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_129
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ec392cef8ee8741ae5560d286fed93
+      internalID: -6288689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_130
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 169
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f87736012fd0c44a2e65901020276f
+      internalID: 1662403319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_131
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 169
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff826802e9e9d15418e31ab12a503c55
+      internalID: -1045004342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_132
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 170
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b33f9d66374dfb45a64369a165395a1
+      internalID: 737702787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_133
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 170
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cff59d28933e744b26806bf51949fb
+      internalID: -1742649526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_134
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 169
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7723f60e8eb26184aa8a3aae2cbab556
+      internalID: 181925899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_135
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 169
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4280a80b8ba2f448eb2a8a8dbf8e30
+      internalID: 957359790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_136
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 169
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fea4b8192014494fb0f620e4d0e05ff
+      internalID: 781442062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_137
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 169
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99b98ccb3ebd3f44a3ed52943494a9c
+      internalID: -2097843772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_138
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 167
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd06cc0d37b6854593fdf41d9cb1572
+      internalID: -1839468908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_139
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 169
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd43e860ecd0ce14283b3d5da02083cd
+      internalID: -788611073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_140
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 169
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6fe37f51e61e8478af62efbeffa3ec
+      internalID: -1469109869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_141
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 146
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa53d6d59a92b234ca13d536ba518f36
+      internalID: -1395369364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_142
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 146
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104ec2bd019475140b90aad7a1e11667
+      internalID: 231492527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_143
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 146
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba124c8f3cf7284895eb2a014a59c0f
+      internalID: -1415144075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_144
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 146
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da8829fbf3251b48b529f1d42f2db32
+      internalID: 1367884918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_145
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 146
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a07263cd5f8994b8b56970973d5df5
+      internalID: -1429385741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_146
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 146
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cc70552a45b86468cf0cbbf2736776
+      internalID: 993838916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_147
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 146
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d74f04bb13f1e442bdd99af9ea5f6e4
+      internalID: 2004611807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_148
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 146
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136b2d0485932514d9ea64688b600263
+      internalID: -1248162828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_149
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 150
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29094fea6a01e3a4a9ecb7f9f7166fdd
+      internalID: 254962289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_150
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 151
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71540ac6e38c9424ba23cf2661f27b7b
+      internalID: -102886812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_151
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 153
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626cef64087e89949ac8262df584cde8
+      internalID: 1516709612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_152
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 153
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50da7988691106c4894e08a6f72d5b16
+      internalID: -1843810520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_153
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 153
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf60067fe19785148a807296223cd069
+      internalID: 1226327139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_154
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 154
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea51e67db0189244acf683f984531c7
+      internalID: -1017874682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_155
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 153
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2955b8f79368ac41abe5670f95cb198
+      internalID: 147675561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_156
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 153
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049671e600262bd40bd709152c2ce81e
+      internalID: 2111938290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_157
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 153
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745efe55c29f7c049b82bd5fcc9b8a09
+      internalID: 37457798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_158
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 153
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7792c6c83ef9a3947955d646f1d68c10
+      internalID: -2028162356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_159
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 153
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbc0ab65e1350f47abdb0154c992dd5
+      internalID: -1347217758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_160
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 153
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f891a4d59030c4985fe13e8930ab6e
+      internalID: -1830710552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_161
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 153
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f23c6095f716a42adf0ec1a36ab352
+      internalID: 928676149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_162
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 153
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96e9626db3a3a74884a8cd1e3ef2a16
+      internalID: -1914718350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_163
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 145
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b66489e0635374a983006491cf37f3
+      internalID: -705980958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_164
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 147
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24494087b4fe44d4f9b3abca72400ca3
+      internalID: -1714517763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_165
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 137
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3f6fdde4bc04d4cb30a317be268016
+      internalID: 1823077782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_166
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 137
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b487ea6c8cd5aa34b93cc9520b8b1b23
+      internalID: -1537652112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_167
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 137
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a7ed48312875a498b9ad3561145a2c
+      internalID: -1134433294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_168
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 137
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085e8f592921c9947a961b99d5eb8a6a
+      internalID: -205281740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_169
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 137
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80479a1996da1947ac1b068faa02116
+      internalID: 1240235850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_170
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5266623edc5fe4b92b72c4a7ac7c77
+      internalID: -316053925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_171
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 123
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff8373b696951d4dab4369b54b63313
+      internalID: 1221538120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_172
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 123
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d86e781eb6f3e4494ff7352ea4edeb
+      internalID: 2117775920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_173
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 123
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae1d35968f66814491b2e6f87898dd0
+      internalID: -1263984485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_174
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb589e1befb4c764791d188898338f9c
+      internalID: -1252075088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_175
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 124
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32227a6596de9fc48bd634221f760398
+      internalID: 870276583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_176
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345a43aca1f6282469e1431fc779cc4d
+      internalID: -290804353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_177
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 137
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e927a9727a8c7254a9e19f165a0bac64
+      internalID: -459696146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_178
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 137
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186a99571ac0b7440858390349e43fac
+      internalID: -765571944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_179
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 137
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f62eec8e757fe41b53a857558e2c62
+      internalID: -1130136599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_180
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 123
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b15f109e8462048af82e86909035d2
+      internalID: 323582787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_181
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 123
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42129fd0151256f4cb48d40745b1cfec
+      internalID: 1448528909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_182
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 123
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dc6c697a6888a4f81b39b8bdb60a23
+      internalID: -781382857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_183
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 124
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab0378d1db53504f8eeaeba1fb74f9b
+      internalID: -1144444235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_184
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 124
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7556c18d4624e49950b249a4c75e2a
+      internalID: 1064688530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_185
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 124
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8327c938731cf9544bb11ddffafea9cc
+      internalID: -1545308156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_186
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 82
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020fff5eff0044b4e991d7ebd0a97365
+      internalID: -1856464668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_187
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78e9c0231692e34385462fc377f6e58
+      internalID: 5719973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_188
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c0ae0804479f94db807fa840948503
+      internalID: 1328909180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_189
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8110b905138b60d40bf6591d62b79fb0
+      internalID: -400904153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_190
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6d514eae67596468a9f73ae14765eb
+      internalID: 334326875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_191
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81014d46b583bcf43aab752b7bded18b
+      internalID: 65069667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_192
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be4bea1dabb8ea4c9d53567ff6ff7a2
+      internalID: 1854091363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_193
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e81d9b69b557a54d8a0bfc2cd320d0a
+      internalID: 1477209569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_194
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be36887385344c44fb3780369af9448e
+      internalID: 1053075405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_195
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 82
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e30f5de00cdda46925561f611a5476
+      internalID: 1515508883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_196
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221193eb202c4f746b5906a1be4e0969
+      internalID: 1065802493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_197
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82bccf02233e9a4291124d4a80f235c
+      internalID: -1520692365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_198
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 47
+        width: 320
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fe3fe9010ff7046ad249296902561f
+      internalID: 1338709406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_199
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 12
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cace880a42da54f9500a1e958bdbbc
+      internalID: -1653967996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_200
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 14
+        width: 320
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c90cbe55f947e469fb61ca3c28b17e
+      internalID: -1327551808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_0: -927451446
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_1: -32762517
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_10: 1411257573
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_100: -202912123
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_101: 1519424450
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_102: -273296973
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_103: -341527100
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_104: -938990199
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_105: 1640394183
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_106: -595635506
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_107: -2039009089
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_108: 1589329153
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_109: 888422792
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_11: -1938138029
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_110: -1702352307
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_111: -2069983166
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_112: 1547220633
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_113: 190387912
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_114: -1422678246
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_115: 1808570254
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_116: 1914333817
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_117: -619877305
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_118: -1792835483
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_119: -1294038584
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_12: 1677224234
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_120: 2044625262
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_121: 139428833
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_122: 1427846677
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_123: 1390485283
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_124: 318689992
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_125: 1247410354
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_126: 1907253130
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_127: 1881304191
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_128: 2033805789
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_129: -6288689
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_13: -151317887
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_130: 1662403319
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_131: -1045004342
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_132: 737702787
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_133: -1742649526
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_134: 181925899
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_135: 957359790
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_136: 781442062
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_137: -2097843772
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_138: -1839468908
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_139: -788611073
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_14: -1885736824
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_140: -1469109869
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_141: -1395369364
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_142: 231492527
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_143: -1415144075
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_144: 1367884918
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_145: -1429385741
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_146: 993838916
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_147: 2004611807
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_148: -1248162828
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_149: 254962289
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_15: -193983722
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_150: -102886812
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_151: 1516709612
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_152: -1843810520
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_153: 1226327139
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_154: -1017874682
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_155: 147675561
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_156: 2111938290
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_157: 37457798
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_158: -2028162356
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_159: -1347217758
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_16: -1116784349
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_160: -1830710552
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_161: 928676149
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_162: -1914718350
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_163: -705980958
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_164: -1714517763
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_165: 1823077782
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_166: -1537652112
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_167: -1134433294
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_168: -205281740
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_169: 1240235850
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_17: -2101005861
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_170: -316053925
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_171: 1221538120
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_172: 2117775920
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_173: -1263984485
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_174: -1252075088
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_175: 870276583
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_176: -290804353
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_177: -459696146
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_178: -765571944
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_179: -1130136599
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_18: -1605587124
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_180: 323582787
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_181: 1448528909
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_182: -781382857
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_183: -1144444235
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_184: 1064688530
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_185: -1545308156
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_186: -1856464668
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_187: 5719973
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_188: 1328909180
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_189: -400904153
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_19: -309224708
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_190: 334326875
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_191: 65069667
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_192: 1854091363
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_193: 1477209569
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_194: 1053075405
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_195: 1515508883
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_196: 1065802493
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_197: -1520692365
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_198: 1338709406
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_199: -1653967996
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_2: -886250647
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_20: 453656935
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_200: -1327551808
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_21: 189515614
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_22: 473696817
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_23: -296889981
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_24: -1381270786
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_25: -145802911
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_26: -321850665
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_27: 33946462
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_28: 2092456717
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_29: -205336129
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_3: 1976282342
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_30: 292700619
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_31: -1724463949
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_32: 752769966
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_33: 356610936
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_34: 1446428209
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_35: -120962072
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_36: 839252644
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_37: -468389309
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_38: -824083840
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_39: -725084244
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_4: -635008950
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_40: -1965899146
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_41: -230611175
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_42: -1047999134
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_43: -1888050428
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_44: 532405039
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_45: -1164493127
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_46: 2001959436
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_47: 1080647441
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_48: -864956521
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_49: -513293747
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_5: -985593332
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_50: 1274918399
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_51: 610076909
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_52: -229153607
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_53: 2090621993
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_54: -1256969517
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_55: 332772178
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_56: -88150293
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_57: 49050824
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_58: -968201042
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_59: -273098365
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_6: -1023697464
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_60: 1868426991
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_61: 2135094766
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_62: 1260192754
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_63: 1233369561
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_64: -1877791831
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_65: -1488935853
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_66: 1274285524
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_67: 1332760887
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_68: 1165381763
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_69: 845872214
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_7: 326973057
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_70: -1848445520
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_71: 1179872058
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_72: -725141033
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_73: 1625284273
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_74: 691341206
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_75: -204984266
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_76: 62814215
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_77: 1742791545
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_78: -546112322
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_79: 439677702
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_8: 1952828416
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_80: 1687255520
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_81: 653956016
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_82: 1538350348
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_83: -1005916914
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_84: 590183235
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_85: -1493026875
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_86: -2103728797
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_87: 1000374144
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_88: 1685058256
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_89: -1623522530
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_9: -1625822136
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_90: -1692476174
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_91: 212525472
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_92: 1132023189
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_93: 1619682111
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_94: -675799941
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_95: -190887902
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_96: 2002875957
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_97: -1890226885
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_98: 658124975
+      Arcade - 1943 - The Battle of Midway - Miscellaneous - Super Ace_99: -883737002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

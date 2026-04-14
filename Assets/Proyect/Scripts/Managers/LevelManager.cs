@@ -1,41 +1,53 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [Header("Oleadas del Nivel 1")]
-    [Tooltip("Arrastra aquí tus objetos Spawner de la jerarquía")]
-    [SerializeField] private EnemySpawner wave1_UShape;
-    [SerializeField] private EnemySpawner wave2_RedSquadron;
+    [System.Serializable]
+    public class WaveEvent
+    {
+        public string waveName;      // Nombre para organizarte (ej: "Oleada Bucle 1")
+        public float spawnTime;      // Segundo exacto en que aparece
+        public GameObject spawner;   // El objeto Spawner (el que tiene el script de la wave)
+    }
 
-    // [SerializeField] private GameObject bossPrefab; // Lo usaremos luego para Rikaku
+    [Header("Configuración del Nivel 1943")]
+    [SerializeField] private List<WaveEvent> levelWaves;
 
     private void Start()
     {
-        // Al iniciar la escena, arranca el reloj del nivel
+        // Al empezar el nivel, iniciamos el cronómetro de las oleadas
         StartCoroutine(LevelTimelineRoutine());
     }
 
     private IEnumerator LevelTimelineRoutine()
     {
-        Debug.Log("Misión 1: ¡Batalla de Midway Iniciada!");
+        float currentTime = 0f;
 
-        // Esperamos 3 segundos al empezar para que el jugador se acomode
-        yield return new WaitForSeconds(3f);
+        // Recorremos la lista de oleadas que configuraste en el Inspector
+        foreach (WaveEvent wave in levelWaves)
+        {
+            // Esperamos hasta que llegue el momento de esta oleada
+            while (currentTime < wave.spawnTime)
+            {
+                currentTime += Time.deltaTime;
+                yield return null;
+            }
 
-        Debug.Log("0:03 - Entra la primera formación (Oleada 1)");
-        if (wave1_UShape != null) wave1_UShape.TriggerWave();
+            // LANZAR LA OLEADA:
+            if (wave.spawner != null)
+            {
+                // Este es el cambio clave: 
+                // Busca cualquier script que tenga el método "TriggerWave" y lo ejecuta.
+                // Así funciona tanto para el Spawner viejo como para el de Splines.
+                wave.spawner.SendMessage("TriggerWave", SendMessageOptions.DontRequireReceiver);
 
-        // Esperamos 8 segundos más
-        yield return new WaitForSeconds(8f);
+                Debug.Log("Lanzando oleada: " + wave.waveName + " en el segundo " + currentTime);
+            }
+        }
 
-        Debug.Log("0:11 - Entra el escuadrón rojo (Oleada 2)");
-        if (wave2_RedSquadron != null) wave2_RedSquadron.TriggerWave();
-
-        // Esperamos 15 segundos de combate
-        yield return new WaitForSeconds(15f);
-
-        Debug.Log("0:26 - ¡WARNING! El Jefe Rikaku se acerca...");
-        // TODO: Activar el BossSpawner o instanciar a Rikaku
+        // Aquí podrías añadir un aviso de que el nivel terminó o que viene el Jefe Rikaku
+        Debug.Log("Todas las oleadas lanzadas. ¡Prepárate para el jefe!");
     }
 }
