@@ -50,7 +50,7 @@ public class Projectile : MonoBehaviour
         // 2. Detección del Power-Up (¡Esta es la parte que te faltaba!)
         else if (collision.CompareTag("PowerUp"))
         {
-            PowerUp pow = collision.GetComponent<PowerUp>();
+            ItemPow pow = collision.GetComponent<ItemPow>();
             if (pow != null)
             {
                 pow.TakeHit(); // Hacemos que cambie de tipo

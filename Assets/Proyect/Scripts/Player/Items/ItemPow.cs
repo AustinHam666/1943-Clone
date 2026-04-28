@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
-public class PowerUp : MonoBehaviour
+public class ItemPow : MonoBehaviour
 {
     // Añadimos el nuevo tipo "Auto" (Metralleta)
     public enum PowType { Energy, Shotgun, Auto }

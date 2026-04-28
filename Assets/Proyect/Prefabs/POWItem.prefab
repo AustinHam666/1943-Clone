@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 4033309628033655618}
   - component: {fileID: 8555917086450174563}
   - component: {fileID: 3964405995582161518}
-  - component: {fileID: 4323253907730808904}
+  - component: {fileID: 3497769713846017899}
   m_Layer: 0
   m_Name: POWItem
-  m_TagString: PoweUp
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,7 +159,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4323253907730808904
+--- !u!114 &3497769713846017899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

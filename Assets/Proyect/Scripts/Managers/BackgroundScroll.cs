@@ -3,36 +3,23 @@ using UnityEngine;
 public class BackgroundScroll : MonoBehaviour
 {
     [Header("Configuración del Scroll")]
-    [Tooltip("Velocidad a la que el fondo se mueve hacia abajo")]
     [SerializeField] private float scrollSpeed = 2f;
 
-    private float spriteHeight;
+    // Cambiamos a [SerializeField] para que lo escribas tú en el Inspector
+    [Tooltip("La altura total de tu mapa pintado (Ej: 20 o 30)")]
+    [SerializeField] private float mapHeight = 20f;
+
     private Vector2 startPosition;
 
     private void Start()
     {
-        // Guardamos la posición inicial donde colocamos el fondo
         startPosition = transform.position;
-
-        // Obtenemos automáticamente el alto del sprite en unidades de Unity
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        if (sr != null)
-        {
-            spriteHeight = sr.bounds.size.y;
-        }
-        else
-        {
-            Debug.LogError("¡El fondo necesita un componente SpriteRenderer!");
-        }
     }
 
     private void Update()
     {
-        // Mathf.Repeat crea un ciclo que va de 0 a spriteHeight.
-        // Cuando llega a spriteHeight, vuelve a 0.
-        float newPositionY = Mathf.Repeat(Time.time * scrollSpeed, spriteHeight);
-
-        // Movemos el fondo hacia abajo usando el valor cíclico
+        // Usamos el mapHeight que definiste a mano
+        float newPositionY = Mathf.Repeat(Time.time * scrollSpeed, mapHeight);
         transform.position = startPosition + Vector2.down * newPositionY;
     }
 }
