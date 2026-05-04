@@ -47,7 +47,7 @@ public class Projectile : MonoBehaviour
                 Deactivate();
             }
         }
-        // 2. Detección del Power-Up (¡Esta es la parte que te faltaba!)
+        // 2. Detección del Power-Up
         else if (collision.CompareTag("PowerUp"))
         {
             ItemPow pow = collision.GetComponent<ItemPow>();
@@ -57,5 +57,11 @@ public class Projectile : MonoBehaviour
                 Deactivate();  // La bala se destruye al impactar el ítem
             }
         }
+    }
+
+    // --- EL ARREGLO PARA LAS BALAS FANTASMA ---
+    private void OnBecameInvisible()
+    {
+        Deactivate();
     }
 }

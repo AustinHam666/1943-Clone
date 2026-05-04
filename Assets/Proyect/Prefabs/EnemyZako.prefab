@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4466043164001310664}
   - component: {fileID: 482611261184078538}
   - component: {fileID: 8862482015044953775}
-  - component: {fileID: 9045882995342389105}
   - component: {fileID: 3639222340073239209}
+  - component: {fileID: 2343751439258762321}
   m_Layer: 0
   m_Name: EnemyZako
   m_TagString: Enemy
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 767299242, guid: 1e62ca99675147947a386f1062668749, type: 3}
+  m_Sprite: {fileID: -2097675156, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,7 +126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.9375, y: 2.625}
+    oldSize: {x: 0.9375, y: 0.9375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -177,20 +177,8 @@ MonoBehaviour:
   maxHealth: 10
   damageToPlayer: 20
   scoreValue: 100
---- !u!114 &9045882995342389105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2212327927633799343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34ae294850ad3634ea767e3fa55890ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
-  waypointTolerance: 0.1
+  explosionPrefab: {fileID: 3067581730954143397, guid: 50adfe939f5616243b8b6c583add4c4f, type: 3}
+  mySquadron: {fileID: 0}
 --- !u!114 &3639222340073239209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +194,27 @@ MonoBehaviour:
   bulletPoolTag: EnemyBullet
   firePoint: {fileID: 1179026524909180314}
   timeBetweenShots: 1.5
+--- !u!114 &2343751439258762321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212327927633799343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89426938f305efa4d93b0c17777b1fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSprite: {fileID: -2097675156, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
+  turnFrames:
+  - {fileID: -929877865, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
+  - {fileID: 1856472967, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
+  - {fileID: -1873718341, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
+  - {fileID: 15444714, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
+  frameRate: 0.1
+  speed: 4
+  yTurnThreshold: 0
 --- !u!1 &3079388422710849697
 GameObject:
   m_ObjectHideFlags: 0

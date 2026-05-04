@@ -5,6 +5,10 @@ using Unity.Mathematics;
 
 public class EnemySpawnerSpline : MonoBehaviour
 {
+    [Header("Pruebas")]
+    [Tooltip("Marcá esto para que arranque solo al darle Play (no rompe los otros spawners)")]
+    [SerializeField] private bool autoStart = false;
+
     [Header("Configuración de la Oleada Curva")]
     [SerializeField] private string enemyPoolTag = "EnemyAcrobata";
     [SerializeField] private int enemiesInWave = 5;
@@ -13,13 +17,32 @@ public class EnemySpawnerSpline : MonoBehaviour
     [Tooltip("Arrastra aquí tu objeto Path_Bucle")]
     [SerializeField] private SplineContainer splinePath;
 
+    [Header("Conexión con el Premio (Opcional)")]
+    [Tooltip("Arrastrá acá el ManagerEscuadronRojo de tu escena")]
+    [SerializeField] private RedSquadronManager squadronManager;
+
+    private void Start()
+    {
+        // Si está marcado en el Inspector, arranca solo. Si no, espera la orden.
+        if (autoStart)
+        {
+            TriggerWave();
+        }
+    }
+
     // Función que llama el LevelManager
     public void TriggerWave()
     {
         if (splinePath == null)
         {
-            Debug.LogError("¡ERROR! El Spawner NO tiene asignado el Path_Bucle en el Inspector.");
+            Debug.LogError("¡ERROR! El Spawner NO tiene asignado el Path en el Inspector.");
             return;
+        }
+
+        // Avisamos al manager cuántos aviones son en total para esta oleada
+        if (squadronManager != null)
+        {
+            squadronManager.totalPlanes = enemiesInWave;
         }
 
         StartCoroutine(SpawnWaveRoutine());
@@ -49,6 +72,13 @@ public class EnemySpawnerSpline : MonoBehaviour
                 if (movement != null)
                 {
                     movement.SetSplinePath(splinePath);
+                }
+
+                // 3. Le inyectamos el Manager a cada avión que nace
+                Enemy enemyScript = enemyObj.GetComponent<Enemy>();
+                if (enemyScript != null)
+                {
+                    enemyScript.mySquadron = squadronManager;
                 }
             }
 

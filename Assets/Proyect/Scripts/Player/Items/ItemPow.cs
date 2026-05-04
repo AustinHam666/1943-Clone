@@ -29,7 +29,7 @@ public class ItemPow : MonoBehaviour
     private void OnEnable()
     {
         currentType = PowType.Energy;
-        currentHits = 0; // Reiniciamos los golpes al nacer
+        currentHits = 0;
         UpdateVisuals();
     }
 
@@ -65,15 +65,27 @@ public class ItemPow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        // 1. Detectar si lo toca una bala del jugador
+        if (collision.CompareTag("PlayerProjectile"))
+        {
+            TakeHit();
+
+            // Destruimos la bala para que no atraviese el ítem
+            collision.gameObject.SetActive(false);
+        }
+        // 2. Detectar si lo toca la nave del jugador
+        else if (collision.CompareTag("Player"))
         {
             PlayerController player = collision.GetComponent<PlayerController>();
+
             if (player != null)
             {
+                // Entregamos la mejora dependiendo del color actual
                 if (currentType == PowType.Energy) player.RestoreEnergy(energyRestoreAmount);
                 else if (currentType == PowType.Shotgun) player.EquipShotgun();
                 else if (currentType == PowType.Auto) player.EquipAuto();
 
+                // El ítem desaparece porque ya lo agarraste
                 gameObject.SetActive(false);
             }
         }

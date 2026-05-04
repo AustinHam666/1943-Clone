@@ -10,6 +10,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private float padding = 0.5f;
 
+    [Header("Sprites del Pucará")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite rectoSprite;
+    [SerializeField] private Sprite inclinadoSprite;
+
+    [Header("Efecto de Daño")]
+    [SerializeField] private Sprite damageFlashSprite; // Acá va el Pucará todo blanco (image_65.png)
+    [SerializeField] private float flashDuration = 0.1f;
+    [SerializeField] private int flashCount = 4;
+    [SerializeField] private float immunityDurationAfterDamage = 1.0f;
+
     [Header("Sistema de Energía")]
     [SerializeField] private float maxEnergy = 100f;
     [SerializeField] private float passiveDrainRate = 1.5f;
@@ -18,7 +29,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRate = 0.15f;
     [SerializeField] private float shotgunSpreadAngle = 15f;
-    [SerializeField] private float powerUpDuration = 10f; // Tiempo que dura el arma especial
+    [SerializeField] private float powerUpDuration = 10f;
 
     [Header("Mecánica de Evasión (Loop)")]
     [SerializeField] private int maxEvades = 3;
@@ -39,8 +50,12 @@ public class PlayerController : MonoBehaviour
     private bool isEvading;
     private bool hasShotgun = false;
     private bool hasAuto = false;
-    private float baseFireRate; // Para recordar nuestra velocidad de disparo original
-    private Coroutine weaponTimerRoutine; // Para controlar el temporizador
+    private float baseFireRate;
+    private Coroutine weaponTimerRoutine;
+
+    // Variables Daño
+    private bool isDamagedAndImmune = false;
+    private Coroutine damageFlashRoutine;
 
     public float CurrentEnergy => currentEnergy;
     public int CurrentEvades => currentEvades;
@@ -50,14 +65,20 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
+
+        if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
     {
         currentEnergy = maxEnergy;
         currentEvades = maxEvades;
-        baseFireRate = fireRate; // Guardamos la cadencia de fuego inicial
+        baseFireRate = fireRate;
         CalculateScreenBounds();
+
+        spriteRenderer.sprite = rectoSprite;
+        spriteRenderer.flipX = false;
+        spriteRenderer.color = Color.white;
 
         if (GameManager.Instance != null)
         {
@@ -71,6 +92,7 @@ public class PlayerController : MonoBehaviour
 
         HandleEnergyDrain();
         HandleShooting();
+        HandleSpriteIncline();
     }
 
     private void FixedUpdate()
@@ -104,6 +126,69 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.Instance.TogglePause();
         }
+    }
+
+    #endregion
+
+    #region Lógica de Animación de Sprites
+
+    private void HandleSpriteIncline()
+    {
+        // Si estamos en medio del parpadeo de daño, no cambiamos el sprite por la inclinación
+        if (isDamagedAndImmune) return;
+
+        if (moveInput.x > 0.1f)
+        {
+            spriteRenderer.sprite = inclinadoSprite;
+            spriteRenderer.flipX = false;
+        }
+        else if (moveInput.x < -0.1f)
+        {
+            spriteRenderer.sprite = inclinadoSprite;
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.sprite = rectoSprite;
+            spriteRenderer.flipX = false;
+        }
+    }
+
+    #endregion
+
+    #region Lógica de Parpadeo de Daño y Capas
+
+    private IEnumerator PerformDamageFlashRoutine()
+    {
+        isDamagedAndImmune = true;
+
+        // Buscamos las capas de físicas
+        int playerLayer = LayerMask.NameToLayer("Player");
+        int immuneLayer = LayerMask.NameToLayer("ImmunePlayer");
+
+        // Pasamos a la capa inmune (para que las balas te pasen de largo)
+        if (immuneLayer != -1) gameObject.layer = immuneLayer;
+
+        for (int i = 0; i < flashCount; i++)
+        {
+            // Ponemos el sprite blanco
+            spriteRenderer.sprite = damageFlashSprite;
+            yield return new WaitForSeconds(flashDuration);
+
+            // Volvemos al sprite normal
+            spriteRenderer.sprite = rectoSprite;
+            yield return new WaitForSeconds(flashDuration);
+        }
+
+        // Nos aseguramos que quede el sprite normal al final
+        spriteRenderer.sprite = rectoSprite;
+
+        // Esperamos el tiempo de gracia restante
+        yield return new WaitForSeconds(immunityDurationAfterDamage - (flashCount * flashDuration * 2));
+
+        // Volvemos a la capa física normal
+        if (playerLayer != -1) gameObject.layer = playerLayer;
+        isDamagedAndImmune = false;
     }
 
     #endregion
@@ -171,10 +256,8 @@ public class PlayerController : MonoBehaviour
     {
         if (ObjectPooler.Instance != null && firePoint != null)
         {
-            // Bala central (siempre se dispara)
             ObjectPooler.Instance.SpawnFromPool("PlayerBullet", firePoint.position, firePoint.rotation);
 
-            // Si recogimos el ítem Escopeta, disparamos dos balas extra en diagonal
             if (hasShotgun)
             {
                 Quaternion leftAngle = Quaternion.Euler(0, 0, firePoint.eulerAngles.z + shotgunSpreadAngle);
@@ -207,7 +290,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
-        if (isEvading) return;
+        if (isEvading || isDamagedAndImmune) return;
 
         currentEnergy -= damageAmount;
 
@@ -216,12 +299,21 @@ public class PlayerController : MonoBehaviour
             GameManager.Instance.UpdateEnergyUI(currentEnergy, maxEnergy);
         }
 
+        TriggerDamageEffect();
+
         if (currentEnergy <= 0) Die();
+    }
+
+    private void TriggerDamageEffect()
+    {
+        if (damageFlashRoutine != null) StopCoroutine(damageFlashRoutine);
+        damageFlashRoutine = StartCoroutine(PerformDamageFlashRoutine());
     }
 
     private void Die()
     {
         currentEnergy = 0;
+        spriteRenderer.color = Color.white;
 
         if (GameManager.Instance != null)
         {
@@ -257,13 +349,12 @@ public class PlayerController : MonoBehaviour
     {
         hasAuto = true;
         hasShotgun = false;
-        fireRate = baseFireRate / 3f; // Dispara mucho más rápido
+        fireRate = baseFireRate / 3f;
         ResetWeaponTimer();
     }
 
     private void ResetWeaponTimer()
     {
-        // Si ya había un temporizador corriendo, lo detenemos para reiniciarlo
         if (weaponTimerRoutine != null) StopCoroutine(weaponTimerRoutine);
         weaponTimerRoutine = StartCoroutine(WeaponTimerRoutine());
     }
@@ -272,7 +363,6 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(powerUpDuration);
 
-        // Al terminar el tiempo, volvemos a la normalidad
         hasShotgun = false;
         hasAuto = false;
         fireRate = baseFireRate;

@@ -11,8 +11,6 @@ public class EnemySpawner : MonoBehaviour
 
     private Transform[] wavePath;
 
-    // Usamos Awake en lugar de Start para inicializar la ruta silenciosamente, 
-    // sin disparar la oleada todavía.
     private void Awake()
     {
         if (pathContainer != null)
@@ -25,10 +23,6 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// El LevelManager (Director de Nivel) llamará a este método 
-    /// para iniciar la oleada en el segundo exacto que corresponda.
-    /// </summary>
     public void TriggerWave()
     {
         StartCoroutine(SpawnWaveRoutine());
@@ -38,20 +32,32 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < enemiesInWave; i++)
         {
-            // 1. Pedimos un enemigo al Pooler
-            GameObject enemyObj = ObjectPooler.Instance.SpawnFromPool(enemyPoolTag, Vector3.zero, Quaternion.identity);
+            // 1. DETERMINAR POSICIÓN: Si tenemos ruta, usamos el primer punto. Si no, usamos la posición del Spawner
+            Vector3 spawnPos = (wavePath != null && wavePath.Length > 0) ? wavePath[0].position : transform.position;
+
+            // 2. PEDIR AL POOL: Usamos spawnPos en lugar de Vector3.zero
+            GameObject enemyObj = ObjectPooler.Instance.SpawnFromPool(enemyPoolTag, spawnPos, Quaternion.identity);
 
             if (enemyObj != null)
             {
-                // 2. Le asignamos la ruta al script de movimiento
+                // 3. CONFIGURAR SEGÚN EL TIPO:
+
+                // Si es un avión que sigue ruta (EnemyMovement)
                 EnemyMovement movement = enemyObj.GetComponent<EnemyMovement>();
                 if (movement != null)
                 {
                     movement.SetPath(wavePath);
                 }
+
+                // Si es un Zako (Acróbata)
+                ZakoController zako = enemyObj.GetComponent<ZakoController>();
+                if (zako != null)
+                {
+                    // No necesita SetPath, pero podés re-inicializarlo si hace falta
+                    // O dejar que su propio script tome el control.
+                }
             }
 
-            // 3. Esperamos el tiempo definido antes de sacar al siguiente avión
             yield return new WaitForSeconds(timeBetweenSpawns);
         }
     }

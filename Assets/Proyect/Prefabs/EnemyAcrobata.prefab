@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -1625822136, guid: 6fea459eb7d88c240bd825ed69329f1d, type: 3}
+  m_Sprite: {fileID: 4596965, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,7 +126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5625, y: 1}
+    oldSize: {x: 1, y: 0.9375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -177,6 +177,8 @@ MonoBehaviour:
   maxHealth: 10
   damageToPlayer: 20
   scoreValue: 100
+  explosionPrefab: {fileID: 3591516959811076912, guid: 957fbec856150f94981ef0b8126b1b9a, type: 3}
+  mySquadron: {fileID: 0}
 --- !u!114 &3639222340073239209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +207,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  directionalSprites:
+  - {fileID: 4596965, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 993712303, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: -1245387271, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 467649604, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: -986220915, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 671356373, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 712994997, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 2013530410, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: -222306290, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: -961057625, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: -1587758877, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 1249198414, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 1249198414, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 722319365, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 1353982797, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: -133743214, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
+  - {fileID: 947452226, guid: 5863af7b7d5b6594ba5881684245dd55, type: 3}
 --- !u!1 &3079388422710849697
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +250,7 @@ Transform:
   m_GameObject: {fileID: 3079388422710849697}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.495, z: 0}
+  m_LocalPosition: {x: 0.0081, y: 0.495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -6,55 +6,84 @@ public class Enemy : MonoBehaviour
     [Header("Estadísticas Base")]
     [SerializeField] private float maxHealth = 10f;
     [SerializeField] private float damageToPlayer = 20f;
-
-    // Preparando el terreno para la UI más adelante
     [SerializeField] private int scoreValue = 100;
 
+    [Header("Efectos Visuales")]
+    [SerializeField] private GameObject explosionPrefab; // <-- Arrastrá acá tu prefab de explosión
+
+    [Header("Mecánica de Escuadrón (Solo para Zako Rojos)")]
+    public RedSquadronManager mySquadron;
+
     private float currentHealth;
+    private bool diedByPlayer;
 
     private void OnEnable()
     {
-        // Como también usaremos Object Pooling para los enemigos, 
-        // reiniciamos la salud cada vez que se activan.
         currentHealth = maxHealth;
+        diedByPlayer = false;
     }
 
     public void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
-
-        // TODO: Añadir efecto de parpadeo blanco al recibir daño
+        // TODO: Añadir efecto de parpadeo blanco (después lo vemos si querés)
 
         if (currentHealth <= 0)
         {
+            diedByPlayer = true;
             Die();
         }
     }
 
     private void Die()
     {
-        // Le enviamos el valor de los puntos al GameManager
-        if (GameManager.Instance != null)
+        // --- LÓGICA DE EXPLOSIÓN ---
+        // Solo explotamos si el jugador lo mató (bala o choque)
+        if (diedByPlayer && explosionPrefab != null)
+        {
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        }
+
+        // Si el jugador lo mató, sumamos puntos
+        if (diedByPlayer && GameManager.Instance != null)
         {
             GameManager.Instance.AddScore(scoreValue);
         }
 
-        gameObject.SetActive(false);
+        // --- AVISO AL ESCUADRÓN ROJO ---
+        if (mySquadron != null)
+        {
+            if (diedByPlayer)
+            {
+                mySquadron.ReportPlaneKilled(transform.position);
+            }
+        }
+
+        gameObject.SetActive(false); // Vuelve al Pool
     }
 
-    // Detectamos la colisión física contra el jugador
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Si chocamos contra el jugador...
         if (collision.CompareTag("Player"))
         {
             PlayerController player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
-                // Le hacemos daño al jugador y destruimos este avión (kamikaze)
                 player.TakeDamage(damageToPlayer);
+                diedByPlayer = true; // El choque kamikaze explota
                 Die();
             }
+        }
+    }
+
+    private void OnBecameInvisible()
+    {
+        if (!diedByPlayer)
+        {
+            // Agregamos esta línea para avisar que se escapó
+            if (mySquadron != null) mySquadron.ReportPlaneEscaped();
+
+            Die();
         }
     }
 }
