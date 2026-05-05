@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject gameOverPanel;
 
-    private int currentScore = 0;
+    public int currentScore = 0;
     private bool isPaused = false;
     private bool isGameOver = false;
 

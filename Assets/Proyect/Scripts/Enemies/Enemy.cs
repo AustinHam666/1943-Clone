@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int scoreValue = 100;
 
     [Header("Efectos Visuales")]
-    [SerializeField] private GameObject explosionPrefab; // <-- Arrastrá acá tu prefab de explosión
+    [SerializeField] private GameObject explosionPrefab;
 
     [Header("Mecánica de Escuadrón (Solo para Zako Rojos)")]
     public RedSquadronManager mySquadron;
@@ -26,7 +26,6 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
-        // TODO: Añadir efecto de parpadeo blanco (después lo vemos si querés)
 
         if (currentHealth <= 0)
         {
@@ -37,20 +36,23 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        // --- LÓGICA DE EXPLOSIÓN ---
-        // Solo explotamos si el jugador lo mató (bala o choque)
+        // --- 1. AVISO AL PADRE (BARCO O BOSS) ---
+        // Esto es lo que hace que el BattleshipMaster cuente la baja
+        SendMessageUpwards("TorretaDestruida", SendMessageOptions.DontRequireReceiver);
+
+        // --- 2. LÓGICA DE EXPLOSIÓN ---
         if (diedByPlayer && explosionPrefab != null)
         {
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         }
 
-        // Si el jugador lo mató, sumamos puntos
+        // Sumamos puntos
         if (diedByPlayer && GameManager.Instance != null)
         {
             GameManager.Instance.AddScore(scoreValue);
         }
 
-        // --- AVISO AL ESCUADRÓN ROJO ---
+        // --- 3. AVISO AL ESCUADRÓN ROJO ---
         if (mySquadron != null)
         {
             if (diedByPlayer)
@@ -59,18 +61,19 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        gameObject.SetActive(false); // Vuelve al Pool
+        gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Si el jugador nos choca
         if (collision.CompareTag("Player"))
         {
             PlayerController player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
                 player.TakeDamage(damageToPlayer);
-                diedByPlayer = true; // El choque kamikaze explota
+                diedByPlayer = true;
                 Die();
             }
         }
@@ -80,9 +83,7 @@ public class Enemy : MonoBehaviour
     {
         if (!diedByPlayer)
         {
-            // Agregamos esta línea para avisar que se escapó
             if (mySquadron != null) mySquadron.ReportPlaneEscaped();
-
             Die();
         }
     }

@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.768849, y: -0.042222545, z: -0.48604453}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -145,6 +145,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e81e926698d4864096bb2969850d65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  estadoActual: 0
+  puntoCentral: {x: 0, y: 3, z: 0}
+  velocidadEntrada: 3
+  radioGiro: 2
+  velocidadGiro: 2
+  vueltasADar: 2
+  tagMiniCaza: MiniCaza
+  tiempoEntreHijos: 1.5
+  sRenderer: {fileID: 6547186367576036752}
+  spriteIzquierda: {fileID: -347369070, guid: 11aaea2b06214c5438f1547d096e1333, type: 3}
+  spriteCentro: {fileID: -1469268186, guid: 11aaea2b06214c5438f1547d096e1333, type: 3}
+  spriteDerecha: {fileID: 964872599, guid: 11aaea2b06214c5438f1547d096e1333, type: 3}
+  umbralGiro: 0.01
 --- !u!114 &3349763973294330872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   damageToPlayer: 20
-  scoreValue: 100
+  scoreValue: 500
   explosionPrefab: {fileID: 0}
   mySquadron: {fileID: 0}
 --- !u!50 &7483420809047291186

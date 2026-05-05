@@ -2,52 +2,56 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Esto crea el "Molde" para nuestra tabla en el Inspector
+[System.Serializable]
+public class EventoDeNivel
+{
+    public string descripcion = "Ej: Salen los Verdes"; // Para que vos te organices
+    public float segundoExacto; // En qué segundo del nivel querés que pase
+    public GameObject objetoAActivar; // El Spawner, la Nodriza o el Boss
+}
+
 public class LevelManager : MonoBehaviour
 {
-    [System.Serializable]
-    public class WaveEvent
+    [Header("Línea de Tiempo del Nivel")]
+    [Tooltip("Añadí elementos con el botón + para armar tu nivel")]
+    public List<EventoDeNivel> lineaDeTiempo;
+
+    void Start()
     {
-        public string waveName;      // Nombre para organizarte (ej: "Oleada Bucle 1")
-        public float spawnTime;      // Segundo exacto en que aparece
-        public GameObject spawner;   // El objeto Spawner (el que tiene el script de la wave)
-    }
-
-    [Header("Configuración del Nivel 1943")]
-    [SerializeField] private List<WaveEvent> levelWaves;
-
-    private void Start()
-    {
-        // Al empezar el nivel, iniciamos el cronómetro de las oleadas
-        StartCoroutine(LevelTimelineRoutine());
-    }
-
-    private IEnumerator LevelTimelineRoutine()
-    {
-        float currentTime = 0f;
-
-        // Recorremos la lista de oleadas que configuraste en el Inspector
-        foreach (WaveEvent wave in levelWaves)
+        // 1. Apagamos TODO lo que esté en la lista por seguridad
+        foreach (var evento in lineaDeTiempo)
         {
-            // Esperamos hasta que llegue el momento de esta oleada
-            while (currentTime < wave.spawnTime)
-            {
-                currentTime += Time.deltaTime;
-                yield return null;
-            }
-
-            // LANZAR LA OLEADA:
-            if (wave.spawner != null)
-            {
-                // Este es el cambio clave: 
-                // Busca cualquier script que tenga el método "TriggerWave" y lo ejecuta.
-                // Así funciona tanto para el Spawner viejo como para el de Splines.
-                wave.spawner.SendMessage("TriggerWave", SendMessageOptions.DontRequireReceiver);
-
-                Debug.Log("Lanzando oleada: " + wave.waveName + " en el segundo " + currentTime);
-            }
+            if (evento.objetoAActivar != null)
+                evento.objetoAActivar.SetActive(false);
         }
 
-        // Aquí podrías añadir un aviso de que el nivel terminó o que viene el Jefe Rikaku
-        Debug.Log("Todas las oleadas lanzadas. ¡Prepárate para el jefe!");
+        // 2. Arrancamos el reloj
+        StartCoroutine(EjecutarNivel());
+    }
+
+    IEnumerator EjecutarNivel()
+    {
+        float cronometro = 0f;
+
+        // Repasamos la lista evento por evento
+        foreach (var evento in lineaDeTiempo)
+        {
+            // Calculamos cuánto falta esperar para este evento
+            float tiempoEspera = evento.segundoExacto - cronometro;
+
+            if (tiempoEspera > 0)
+            {
+                yield return new WaitForSeconds(tiempoEspera);
+                cronometro += tiempoEspera; // Actualizamos nuestro reloj interno
+            }
+
+            // ¡Llegó la hora! Activamos el spawner o enemigo
+            if (evento.objetoAActivar != null)
+            {
+                evento.objetoAActivar.SetActive(true);
+                Debug.Log("Activando: " + evento.descripcion + " en el segundo " + cronometro);
+            }
+        }
     }
 }

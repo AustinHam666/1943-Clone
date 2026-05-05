@@ -37,6 +37,9 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // --- EL DETECTOR DE MENTIRAS ---
+        Debug.Log("<color=cyan>La bala chocó con: </color>" + collision.gameObject.name + " | Tag: " + collision.tag);
+
         // 1. Detección de Enemigos
         if (collision.CompareTag("Enemy"))
         {
