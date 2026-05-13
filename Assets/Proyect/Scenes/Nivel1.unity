@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 12281285}
   - component: {fileID: 12281284}
   - component: {fileID: 12281286}
-  - component: {fileID: 12281287}
   m_Layer: 0
   m_Name: Fondo_Mar_1
   m_TagString: Untagged
@@ -187,7 +186,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 20, y: 30}
+  m_Size: {x: 100, y: 100}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -202,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 12281283}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 42.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -217,31 +216,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 12281283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecaebbe11b492ce4fb786f53efd4c24d, type: 3}
+  m_Script: {fileID: 11500000, guid: daeef61abf3f1244b856758607125855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadFondo: 2
---- !u!95 &12281287
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12281283}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9da7ce4cc898ca445bd5ab9c490a9a95, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  scrollSpeed: 1
 --- !u!1 &12954156
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +367,7 @@ GameObject:
   - component: {fileID: 15368969}
   - component: {fileID: 15368972}
   m_Layer: 0
-  m_Name: SpawnerWave1
+  m_Name: ZakoSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -408,9 +386,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPoolTag: EnemyZako
-  enemiesInWave: 5
-  timeBetweenSpawns: 0.5
+  cantidadEnemigos: 5
+  tiempoEntreSpawns: 0.3
+  tipoMovimiento: 3
+  puntoDeSpawn: {fileID: 0}
+  tipoFormacion: 1
+  offsetX: -0.8
+  offsetY: 0.4
   pathContainer: {fileID: 1245422329}
+  splinePath: {fileID: 0}
+  squadronManager: {fileID: 0}
 --- !u!4 &15368970
 Transform:
   m_ObjectHideFlags: 0
@@ -420,7 +405,7 @@ Transform:
   m_GameObject: {fileID: 15368968}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.09, z: 0}
+  m_LocalPosition: {x: -5.02, y: 5.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1538,8 +1523,85 @@ Transform:
   m_GameObject: {fileID: 192896440}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.03, y: -0.51704323, z: 0}
-  m_LocalScale: {x: 0.9459226, y: 0.9459226, z: 0.9459226}
+  m_LocalPosition: {x: -4.85, y: -0.51704323, z: 0}
+  m_LocalScale: {x: 1.0044752, y: 1.0044752, z: 1.0044752}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &223064354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223064357}
+  - component: {fileID: 223064356}
+  - component: {fileID: 223064355}
+  m_Layer: 0
+  m_Name: ZakoSpawner ROJO (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!95 &223064355
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223064354}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53d812d27f643804782af056772ecef8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &223064356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223064354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90ae4451bec72f4dba8fd0c03cee986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPoolTag: EnemyZakoRed
+  cantidadEnemigos: 5
+  tiempoEntreSpawns: 0.3
+  tipoMovimiento: 3
+  puntoDeSpawn: {fileID: 0}
+  tipoFormacion: 1
+  offsetX: -0.8
+  offsetY: 0.4
+  pathContainer: {fileID: 1245422329}
+  splinePath: {fileID: 0}
+  squadronManager: {fileID: 1462016561}
+--- !u!4 &223064357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223064354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.02, y: 5.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1843,6 +1905,12 @@ MonoBehaviour:
   - tag: MiniCaza
     prefab: {fileID: 2499499922499391713, guid: e762d3ef27c7fdc4a85d4918fa3f49de, type: 3}
     size: 30
+  - tag: EnemyZakoRed
+    prefab: {fileID: 2212327927633799343, guid: ed3018d1f7ccb854da911b319300fdc5, type: 3}
+    size: 10
+  - tag: EnemyNodriza
+    prefab: {fileID: 5840050383645349047, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
+    size: 2
 --- !u!4 &263654717
 Transform:
   m_ObjectHideFlags: 0
@@ -1889,63 +1957,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cronogramaDeNivel: []
   nivelFinalizado: 0
---- !u!1001 &273869948
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2212327927633799343, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_Name
-      value: EnemyZako (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
 --- !u!1001 &282091204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1960,7 +1971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6648987816684150089, guid: a2863cb641c02fc47833288807502e4c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7264027718258969878, guid: a2863cb641c02fc47833288807502e4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2569,67 +2580,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441966390}
   m_CullTransparentMesh: 1
---- !u!1001 &459665624
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 32.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.48604453
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5840050383645349047, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_Name
-      value: Enemy_Nodriza (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5840050383645349047, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
 --- !u!1 &462369801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,124 +2828,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467456796}
   m_CullTransparentMesh: 1
---- !u!1001 &478743056
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 63.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329208073906026805, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_Name
-      value: Enemy_Battleship (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329208073906026805, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
---- !u!1001 &483647026
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2212327927633799343, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_Name
-      value: EnemyZako
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
 --- !u!1 &510398369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,7 +3026,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3840,69 +3672,89 @@ Transform:
   m_GameObject: {fileID: 576504907}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &609071119
-PrefabInstance:
+--- !u!1 &627707021
+GameObject:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 627707024}
+  - component: {fileID: 627707023}
+  - component: {fileID: 627707022}
+  m_Layer: 0
+  m_Name: ZakoSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &627707022
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627707021}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53d812d27f643804782af056772ecef8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &627707023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627707021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90ae4451bec72f4dba8fd0c03cee986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPoolTag: EnemyZako
+  cantidadEnemigos: 5
+  tiempoEntreSpawns: 0.3
+  tipoMovimiento: 3
+  puntoDeSpawn: {fileID: 0}
+  tipoFormacion: 1
+  offsetX: -0.8
+  offsetY: 0.4
+  pathContainer: {fileID: 1245422329}
+  splinePath: {fileID: 0}
+  squadronManager: {fileID: 0}
+--- !u!4 &627707024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627707021}
   serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2212327927633799343, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_Name
-      value: EnemyZako (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.82, y: 5.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663852405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4121,6 +3973,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &684778200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 684778203}
+  - component: {fileID: 684778202}
+  m_Layer: 0
+  m_Name: ZakoSpawner ROJO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &684778202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684778200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90ae4451bec72f4dba8fd0c03cee986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPoolTag: EnemyZakoRed
+  cantidadEnemigos: 5
+  tiempoEntreSpawns: 0.3
+  tipoMovimiento: 3
+  puntoDeSpawn: {fileID: 0}
+  tipoFormacion: 1
+  offsetX: -0.8
+  offsetY: 0.4
+  pathContainer: {fileID: 1245422329}
+  splinePath: {fileID: 0}
+  squadronManager: {fileID: 1462016561}
+--- !u!4 &684778203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684778200}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 5.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &688415948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4132,7 +4039,7 @@ GameObject:
   - component: {fileID: 688415950}
   - component: {fileID: 688415951}
   m_Layer: 0
-  m_Name: SpawnerWave2
+  m_Name: SpawnerSpline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4165,7 +4072,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8f35459929b0a449df8b69ad875079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoStart: 1
   enemyPoolTag: EnemyAcrobata
   enemiesInWave: 5
   timeBetweenSpawns: 0.3
@@ -4396,6 +4302,83 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.2874308, y: -4.9935036, z: -0.069588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &916232910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916232913}
+  - component: {fileID: 916232912}
+  - component: {fileID: 916232911}
+  m_Layer: 0
+  m_Name: ZakoSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &916232911
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916232910}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53d812d27f643804782af056772ecef8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &916232912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916232910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90ae4451bec72f4dba8fd0c03cee986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPoolTag: EnemyZako
+  cantidadEnemigos: 5
+  tiempoEntreSpawns: 0.3
+  tipoMovimiento: 3
+  puntoDeSpawn: {fileID: 0}
+  tipoFormacion: 1
+  offsetX: -0.8
+  offsetY: 0.4
+  pathContainer: {fileID: 1245422329}
+  splinePath: {fileID: 0}
+  squadronManager: {fileID: 0}
+--- !u!4 &916232913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916232910}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.03, y: 5.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5274,67 +5257,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1154307211
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.8742585
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 48.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024710659854237133, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329208073906026805, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_Name
-      value: Enemy_Battleship
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329208073906026805, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6b5f6c0c3f158ca4d83ea2c6d0004914, type: 3}
 --- !u!1 &1174752640
 GameObject:
   m_ObjectHideFlags: 0
@@ -5351,7 +5273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1174752641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5364,7 +5286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8f35459929b0a449df8b69ad875079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoStart: 1
   enemyPoolTag: EnemyShoryu
   enemiesInWave: 1
   timeBetweenSpawns: 0.2
@@ -5762,7 +5683,7 @@ Transform:
   m_GameObject: {fileID: 1245422328}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2596066, y: 0.07547045, z: -0.003030017}
+  m_LocalPosition: {x: 0.2596066, y: 0.07547045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6027,67 +5948,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1290451891
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 21.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.48604453
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2156558771815870421, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5840050383645349047, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_Name
-      value: Enemy_Nodriza
-      objectReference: {fileID: 0}
-    - target: {fileID: 5840050383645349047, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
 --- !u!1 &1295478097
 GameObject:
   m_ObjectHideFlags: 0
@@ -6844,63 +6704,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1450844726
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2212327927633799343, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_Name
-      value: EnemyZako (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343880238576628739, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7faf3d4352552b34a9aaaf4003b47d3c, type: 3}
 --- !u!1 &1462016560
 GameObject:
   m_ObjectHideFlags: 0
@@ -6942,6 +6745,61 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.0111074, y: 0.62512815, z: 0.019208098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1502330640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1502330643}
+  - component: {fileID: 1502330642}
+  m_Layer: 0
+  m_Name: SpawnerNodriza
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1502330642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502330640}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90ae4451bec72f4dba8fd0c03cee986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPoolTag: EnemyNodriza
+  cantidadEnemigos: 1
+  tiempoEntreSpawns: 0
+  tipoMovimiento: 4
+  puntoDeSpawn: {fileID: 0}
+  tipoFormacion: 0
+  offsetX: -0.8
+  offsetY: 0.4
+  pathContainer: {fileID: 1245422329}
+  splinePath: {fileID: 0}
+  squadronManager: {fileID: 0}
+--- !u!4 &1502330643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502330640}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.02, y: 5.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7235,6 +7093,37 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1607743221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1607743222}
+  m_Layer: 0
+  m_Name: --SPAWNERZAKOLOCACIONES--
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1607743222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607743221}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.658339, y: 0.32709974, z: -9.965921}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1655543297
 GameObject:
   m_ObjectHideFlags: 0
@@ -7495,7 +7384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742038404}
   - component: {fileID: 1742038403}
-  - component: {fileID: 1742038402}
+  - component: {fileID: 1742038405}
   m_Layer: 0
   m_Name: Background1
   m_TagString: Untagged
@@ -7503,20 +7392,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1742038402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742038401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daeef61abf3f1244b856758607125855, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: 2
-  mapHeight: 20
 --- !u!212 &1742038403
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7616,6 +7491,19 @@ Transform:
   - {fileID: 1151147468}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742038405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742038401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daeef61abf3f1244b856758607125855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 1
 --- !u!1 &1745002927
 GameObject:
   m_ObjectHideFlags: 0
@@ -8357,10 +8245,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4f1999c273ed84a9bf6b19fa055894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineaDeTiempo:
-  - descripcion: Oleada Zako
-    segundoExacto: 2
-    objetoAActivar: {fileID: 15368968}
+  oleadas:
+  - nombre: EnemyNodriza
+    segundoDeAparicion: 2
+    spawnerObject: {fileID: 5840050383645349047, guid: 7a27ee50efd0faa4db4707d57caa395b, type: 3}
+  - nombre: Zakos
+    segundoDeAparicion: 5
+    spawnerObject: {fileID: 15368968}
+  - nombre: Zakos
+    segundoDeAparicion: 10
+    spawnerObject: {fileID: 916232910}
+  - nombre: RedZako
+    segundoDeAparicion: 15
+    spawnerObject: {fileID: 684778200}
+  - nombre: Zakos
+    segundoDeAparicion: 17
+    spawnerObject: {fileID: 627707021}
+  - nombre: Zakos
+    segundoDeAparicion: 25
+    spawnerObject: {fileID: 15368968}
+  - nombre: RedZako
+    segundoDeAparicion: 30
+    spawnerObject: {fileID: 1879276764}
+  - nombre: EnemyShoryu
+    segundoDeAparicion: 32
+    spawnerObject: {fileID: 1174752640}
+  - nombre: EnemyAcrobata
+    segundoDeAparicion: 32
+    spawnerObject: {fileID: 688415948}
+  - nombre: Zakos
+    segundoDeAparicion: 35
+    spawnerObject: {fileID: 916232910}
+  - nombre: Zakos
+    segundoDeAparicion: 37
+    spawnerObject: {fileID: 627707021}
+  - nombre: Zakos
+    segundoDeAparicion: 40
+    spawnerObject: {fileID: 15368968}
+  - nombre: EnemyShoryu
+    segundoDeAparicion: 42
+    spawnerObject: {fileID: 1174752640}
+  - nombre: Zakos
+    segundoDeAparicion: 50
+    spawnerObject: {fileID: 627707021}
+  - nombre: EnemyAcrobata
+    segundoDeAparicion: 52
+    spawnerObject: {fileID: 688415948}
+  - nombre: Zakos
+    segundoDeAparicion: 55
+    spawnerObject: {fileID: 916232910}
+  - nombre: RedZako
+    segundoDeAparicion: 57
+    spawnerObject: {fileID: 688415948}
+  - nombre: Zakos
+    segundoDeAparicion: 60
+    spawnerObject: {fileID: 15368968}
+  - nombre: Zakos
+    segundoDeAparicion: 60
+    spawnerObject: {fileID: 15368968}
+  bossGameObject: {fileID: 1887869253}
 --- !u!4 &1873352356
 Transform:
   m_ObjectHideFlags: 0
@@ -8509,6 +8452,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874117687}
   m_CullTransparentMesh: 1
+--- !u!1 &1879276764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879276767}
+  - component: {fileID: 1879276766}
+  - component: {fileID: 1879276765}
+  m_Layer: 0
+  m_Name: ZakoSpawner ROJO (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!95 &1879276765
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879276764}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53d812d27f643804782af056772ecef8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1879276766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879276764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90ae4451bec72f4dba8fd0c03cee986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPoolTag: EnemyZakoRed
+  cantidadEnemigos: 5
+  tiempoEntreSpawns: 0.3
+  tipoMovimiento: 3
+  puntoDeSpawn: {fileID: 0}
+  tipoFormacion: 1
+  offsetX: -0.8
+  offsetY: 0.4
+  pathContainer: {fileID: 1245422329}
+  splinePath: {fileID: 0}
+  squadronManager: {fileID: 1462016561}
+--- !u!4 &1879276767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879276764}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.14, y: 5.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1887869253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6648987816684150089, guid: a2863cb641c02fc47833288807502e4c, type: 3}
+  m_PrefabInstance: {fileID: 282091204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1930512218
 GameObject:
   m_ObjectHideFlags: 0
@@ -8829,21 +8854,20 @@ SceneRoots:
   - {fileID: 12281285}
   - {fileID: 337637033}
   - {fileID: 282091204}
-  - {fileID: 1154307211}
-  - {fileID: 478743056}
-  - {fileID: 1290451891}
-  - {fileID: 459665624}
   - {fileID: 466205557}
   - {fileID: 192896442}
   - {fileID: 576504909}
   - {fileID: 1245422329}
   - {fileID: 915413253}
   - {fileID: 15368970}
+  - {fileID: 916232913}
+  - {fileID: 627707024}
+  - {fileID: 684778203}
+  - {fileID: 1879276767}
+  - {fileID: 223064357}
   - {fileID: 688415950}
   - {fileID: 1174752642}
+  - {fileID: 1502330643}
   - {fileID: 1462016562}
   - {fileID: 1668730483}
-  - {fileID: 483647026}
-  - {fileID: 609071119}
-  - {fileID: 1450844726}
-  - {fileID: 273869948}
+  - {fileID: 1607743222}

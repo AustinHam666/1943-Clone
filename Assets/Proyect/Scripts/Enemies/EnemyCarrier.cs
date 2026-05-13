@@ -16,7 +16,7 @@ public class EnemyCarrier : MonoBehaviour
     public string tagMiniCaza = "MiniCaza";
     public float tiempoEntreHijos = 1.5f;
 
-    [Header("Sprites de Movimiento (Manual)")]
+    [Header("Sprites de Movimiento")]
     public SpriteRenderer sRenderer;
     public Sprite spriteIzquierda;
     public Sprite spriteCentro;
@@ -25,19 +25,26 @@ public class EnemyCarrier : MonoBehaviour
 
     private float angulo = 0;
     private float vueltasCompletadas = 0;
-    private float tiempoSiguienteHijo;
+    // FIX CRÍTICO: usamos un timer propio en vez de Time.time
+    private float timerSpawn = 0f;
     private Vector2 posicionAnterior;
 
-    void Start()
+    private void OnEnable()
     {
-        if (sRenderer == null) sRenderer = GetComponent<SpriteRenderer>();
+        // Reseteo completo al salir del pool
+        estadoActual = EstadoNodriza.Entrando;
+        angulo = 0f;
+        vueltasCompletadas = 0f;
+        // Empezamos el timer en el tiempo entre hijos para que
+        // no spawnee instantáneamente al aparecer
+        timerSpawn = tiempoEntreHijos;
         posicionAnterior = transform.position;
+
+        if (sRenderer == null) sRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        float movimientoH = 0;
-
         switch (estadoActual)
         {
             case EstadoNodriza.Entrando:
@@ -51,40 +58,34 @@ public class EnemyCarrier : MonoBehaviour
                 break;
         }
 
-        // Detectamos el movimiento lateral comparando con el frame anterior
-        movimientoH = transform.position.x - posicionAnterior.x;
+        float movimientoH = transform.position.x - posicionAnterior.x;
         ActualizarSprite(movimientoH);
-
         posicionAnterior = transform.position;
+
         LógicaSpawneo();
     }
 
     void ActualizarSprite(float deltaX)
     {
         if (sRenderer == null) return;
-
-        // Movimiento a la derecha
         if (deltaX > umbralGiro * Time.deltaTime)
             sRenderer.sprite = spriteDerecha;
-        // Movimiento a la izquierda
         else if (deltaX < -umbralGiro * Time.deltaTime)
             sRenderer.sprite = spriteIzquierda;
-        // Casi quieto
         else
             sRenderer.sprite = spriteCentro;
     }
 
     void MoverHaciaElCentro()
     {
-        // Calculamos el punto exacto donde empieza el círculo en base al radio
         Vector3 puntoInicioGiro = puntoCentral + new Vector3(radioGiro, 0, 0);
-
-        transform.position = Vector3.MoveTowards(transform.position, puntoInicioGiro, velocidadEntrada * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(
+            transform.position, puntoInicioGiro, velocidadEntrada * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, puntoInicioGiro) < 0.1f)
         {
             estadoActual = EstadoNodriza.Girando;
-            angulo = 0f; // Empezamos el círculo exactamente desde este borde
+            angulo = 0f;
         }
     }
 
@@ -99,7 +100,8 @@ public class EnemyCarrier : MonoBehaviour
         {
             angulo = 0;
             vueltasCompletadas++;
-            if (vueltasCompletadas >= vueltasADar) estadoActual = EstadoNodriza.Estatico;
+            if (vueltasCompletadas >= vueltasADar)
+                estadoActual = EstadoNodriza.Estatico;
         }
     }
 
@@ -111,22 +113,17 @@ public class EnemyCarrier : MonoBehaviour
 
     void LógicaSpawneo()
     {
-        if (Time.time > tiempoSiguienteHijo)
+        // FIX: usamos un timer propio que cuenta desde 0, no Time.time global
+        timerSpawn -= Time.deltaTime;
+        if (timerSpawn <= 0f)
         {
-            tiempoSiguienteHijo = Time.time + tiempoEntreHijos;
+            timerSpawn = tiempoEntreHijos;
 
-            // Le pedimos al Pooler que suelte el avioncito
-            GameObject nuevoAvion = ObjectPooler.Instance.SpawnFromPool(tagMiniCaza, transform.position, Quaternion.Euler(0, 0, 180f));
+            GameObject nuevoAvion = ObjectPooler.Instance.SpawnFromPool(
+                tagMiniCaza, transform.position, Quaternion.Euler(0, 0, 180f));
 
-            // El chismoso para la consola:
-            if (nuevoAvion != null)
-            {
-                Debug.Log("¡Avioncito soltado con éxito en la posición: " + transform.position + "!");
-            }
-            else
-            {
-                Debug.LogError("¡PELIGRO! El Pooler devolvió NULL. O el Tag '" + tagMiniCaza + "' está mal escrito, o la cola del Pool está vacía.");
-            }
+            if (nuevoAvion == null)
+                Debug.LogError("Pool vacío o tag incorrecto: " + tagMiniCaza);
         }
     }
 }

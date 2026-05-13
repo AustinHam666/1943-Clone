@@ -221,6 +221,7 @@ MonoBehaviour:
   - {fileID: -1228992163, guid: 682a323262753ca4f803e9206b2e192a, type: 3}
   - {fileID: -1552444302, guid: 682a323262753ca4f803e9206b2e192a, type: 3}
   - {fileID: 545824731, guid: 682a323262753ca4f803e9206b2e192a, type: 3}
+  upSprite: {fileID: 545824731, guid: 682a323262753ca4f803e9206b2e192a, type: 3}
   frameRate: 0.1
   speed: 4
   yTurnThreshold: -2

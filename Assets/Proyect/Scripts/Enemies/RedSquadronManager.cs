@@ -3,36 +3,42 @@ using UnityEngine;
 public class RedSquadronManager : MonoBehaviour
 {
     [Header("Configuración del Premio")]
-    [Tooltip("Arrastrá acá tu prefab ItemPow")]
     public GameObject powPrefab;
     public int totalPlanes = 5;
 
     private int planesKilled = 0;
     private bool squadronEscaped = false;
+    private bool premioEntregado = false;
 
-    // Los aviones rojos llaman a esta función cuando tu bala los destruye
+    // El spawner llama esto antes de cada oleada para resetear el contador
+    public void ResetSquadron(int cantidadPlanes)
+    {
+        planesKilled = 0;
+        squadronEscaped = false;
+        premioEntregado = false;
+        totalPlanes = cantidadPlanes;
+        Debug.Log("[Squadron] Reset - esperando " + cantidadPlanes + " aviones");
+    }
+
     public void ReportPlaneKilled(Vector3 deathPosition)
     {
-        if (squadronEscaped)
-        {
-            Debug.Log("Premio cancelado: ¡Un avión se escapó!");
-            return;
-        }
+        if (squadronEscaped || premioEntregado) return;
 
         planesKilled++;
-        Debug.Log("Avión rojo destruido. Llevamos: " + planesKilled + " de " + totalPlanes);
+        Debug.Log("[Squadron] Avión destruido: " + planesKilled + "/" + totalPlanes);
 
         if (planesKilled >= totalPlanes)
         {
-            Debug.Log("¡Escuadrón aniquilado! Soltando Power-Up en: " + deathPosition);
-            if (powPrefab != null) Instantiate(powPrefab, deathPosition, Quaternion.identity);
-            Destroy(gameObject);
+            premioEntregado = true;
+            Debug.Log("[Squadron] ¡Escuadrón aniquilado! Soltando PowerUp");
+            if (powPrefab != null)
+                Instantiate(powPrefab, deathPosition, Quaternion.identity);
         }
     }
 
-    // Los aviones rojos llaman a esta función si tocan el límite de la pantalla
     public void ReportPlaneEscaped()
     {
         squadronEscaped = true;
+        Debug.Log("[Squadron] Un avión escapó - premio cancelado");
     }
 }

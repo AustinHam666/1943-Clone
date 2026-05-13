@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e40d2ff15cea9449966609dc87158f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 150
   damageToPlayer: 20
   scoreValue: 500
   explosionPrefab: {fileID: 3067581730954143397, guid: 50adfe939f5616243b8b6c583add4c4f, type: 3}
@@ -216,6 +216,7 @@ MonoBehaviour:
   - {fileID: -729733104, guid: 23f1c25f3f59a984b958d0fe0fc40d35, type: 3}
   - {fileID: -1406453765, guid: 23f1c25f3f59a984b958d0fe0fc40d35, type: 3}
   - {fileID: -385112233, guid: 23f1c25f3f59a984b958d0fe0fc40d35, type: 3}
+  mirarAlJugador: 0
 --- !u!1 &3079388422710849697
 GameObject:
   m_ObjectHideFlags: 0

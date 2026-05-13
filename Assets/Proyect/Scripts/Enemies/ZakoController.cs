@@ -3,9 +3,10 @@ using UnityEngine;
 public class ZakoController : MonoBehaviour
 {
     [Header("Sprites")]
-    [SerializeField] private Sprite normalSprite;       // El que vuela recto
-    [SerializeField] private Sprite[] turnFrames;       // Acá arrastrás tus frames de giro
-    [SerializeField] private float frameRate = 0.1f;    // Velocidad del giro
+    [SerializeField] private Sprite normalSprite;      // zakoAssets_0 (bajando)
+    [SerializeField] private Sprite[] turnFrames;      // zakoAssets_1, 2, 3 (giro)
+    [SerializeField] private Sprite upSprite;          // zakoAssets_4 (subiendo)
+    [SerializeField] private float frameRate = 0.1f;
 
     [Header("Configuración")]
     [SerializeField] private float speed = 4f;
@@ -17,41 +18,54 @@ public class ZakoController : MonoBehaviour
     private bool isTurning = false;
     private bool finishedTurn = false;
 
-    void Awake() { sr = GetComponent<SpriteRenderer>(); }
+    void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
+    private void OnEnable()
+    {
+        frameIndex = 0;
+        timer = 0f;
+        isTurning = false;
+        finishedTurn = false;
+        if (sr == null) sr = GetComponent<SpriteRenderer>();
+        if (normalSprite != null) sr.sprite = normalSprite;
+        transform.rotation = Quaternion.identity;
+    }
 
     void Update()
     {
-        // 1. Movimiento básico (bajando)
         if (!isTurning && !finishedTurn)
         {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
-            if (transform.position.y <= yTurnThreshold) isTurning = true;
+            if (transform.position.y <= yTurnThreshold)
+                isTurning = true;
         }
-        // 2. Lógica de Giro (Cambiando el sprite por código)
         else if (isTurning)
         {
             timer += Time.deltaTime;
             if (timer >= frameRate)
             {
                 timer = 0;
-                sr.sprite = turnFrames[frameIndex];
+                if (turnFrames != null && turnFrames.Length > 0 && frameIndex < turnFrames.Length)
+                    sr.sprite = turnFrames[frameIndex];
                 frameIndex++;
-
                 if (frameIndex >= turnFrames.Length)
                 {
                     isTurning = false;
                     finishedTurn = true;
-                    // Ya terminó el giro, volvemos al sprite normal o uno apuntando arriba
-                    sr.sprite = normalSprite;
-                    transform.rotation = Quaternion.Euler(0, 0, 0); // Apuntando arriba
+                    // Al terminar el giro ponemos el sprite de subida
+                    if (upSprite != null) sr.sprite = upSprite;
+                    transform.rotation = Quaternion.identity;
                 }
             }
         }
-        // 3. Subiendo para escapar
         else if (finishedTurn)
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
-            if (transform.position.y > 10f) Destroy(gameObject);
+            if (transform.position.y > 10f)
+                gameObject.SetActive(false);
         }
     }
 }

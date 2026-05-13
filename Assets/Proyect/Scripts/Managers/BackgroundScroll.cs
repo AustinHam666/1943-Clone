@@ -2,24 +2,27 @@ using UnityEngine;
 
 public class BackgroundScroll : MonoBehaviour
 {
-    [Header("Configuración del Scroll")]
-    [SerializeField] private float scrollSpeed = 2f;
+    [Header("Velocidad del scroll")]
+    public float scrollSpeed = 2f;
 
-    // Cambiamos a [SerializeField] para que lo escribas tú en el Inspector
-    [Tooltip("La altura total de tu mapa pintado (Ej: 20 o 30)")]
-    [SerializeField] private float mapHeight = 20f;
+    private float offsetY = 0f;
+    private SpriteRenderer sr;
 
-    private Vector2 startPosition;
-
-    private void Start()
+    void Awake()
     {
-        startPosition = transform.position;
+        sr = GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
+    void Update()
     {
-        // Usamos el mapHeight que definiste a mano
-        float newPositionY = Mathf.Repeat(Time.time * scrollSpeed, mapHeight);
-        transform.position = startPosition + Vector2.down * newPositionY;
+        // Acumulamos con deltaTime — nunca usa Time.time, nunca salta
+        offsetY -= scrollSpeed * Time.deltaTime;
+
+        // Si tiene SpriteRenderer Tiled (el mar), mueve la textura
+        if (sr != null)
+            sr.material.mainTextureOffset = new Vector2(0, offsetY);
+
+        // Mueve el objeto completo hacia abajo (las nubes y naves)
+        transform.Translate(Vector3.down * scrollSpeed * Time.deltaTime);
     }
 }

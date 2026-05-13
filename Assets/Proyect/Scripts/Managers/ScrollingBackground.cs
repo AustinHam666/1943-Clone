@@ -3,25 +3,19 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class ScrollingBackground : MonoBehaviour
 {
-    public float velocidadFondo = 2f;
+    public float velocidadFondo = 1f;
+
     private SpriteRenderer sr;
-    private Vector2 tamanoOriginal;
-    private float desplazamiento = 0f;
+    private float offsetY = 0f;
 
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        // Guardamos el tamaño que le pusiste en el Inspector (20x30)
-        tamanoOriginal = sr.size;
     }
 
     void Update()
     {
-        // Calculamos cuánto se mueve
-        desplazamiento += velocidadFondo * Time.deltaTime;
-
-        // Modificamos internamente cómo se dibuja el mosaico
-        // El tamaño se mantiene igual, solo "deslizamos" el dibujo por dentro
-        sr.size = new Vector2(tamanoOriginal.x, tamanoOriginal.y + desplazamiento);
+        offsetY -= velocidadFondo * Time.deltaTime;
+        sr.material.mainTextureOffset = new Vector2(0, offsetY);
     }
 }

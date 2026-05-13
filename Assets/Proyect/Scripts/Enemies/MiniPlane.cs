@@ -4,71 +4,61 @@ public class MiniPlane : MonoBehaviour
 {
     [Header("Persecución")]
     public float velocidad = 4f;
-    public float velocidadRotacion = 150f; // Qué tan rápido dobla para seguirte
-    private Transform player;
+    public float velocidadRotacion = 150f;
 
     [Header("Disparo")]
-    public string tagBalaEnemiga = "EnemyBullet"; // Usamos el Tag exacto de tu GameManager
+    public string tagBalaEnemiga = "EnemyBullet";
     public float tiempoEntreDisparos = 2f;
-    private float proximoDisparo;
 
-    [Header("Límites de la Pantalla (Pared Invisible)")]
+    [Header("Límites de la Pantalla")]
     public float limiteMinX = -8f;
     public float limiteMaxX = 8f;
     public float limiteMinY = -4.5f;
     public float limiteMaxY = 4.5f;
 
+    private Transform player;
+    // FIX: timer propio en vez de Time.time
+    private float timerDisparo = 0f;
+
     void OnEnable()
     {
-        // OnEnable se ejecuta cada vez que el avioncito "nace" del Object Pooler
-        // Buscamos al jugador por su Tag
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
-        {
             player = playerObj.transform;
-        }
 
-        // Le damos un segundo de gracia antes de empezar a disparar
-        proximoDisparo = Time.time + 1f;
+        // Gracia inicial antes de disparar
+        timerDisparo = -1f;
     }
 
     void Update()
     {
-        // 1. PERSECUCIÓN: Apuntar hacia el jugador
         if (player != null)
         {
-            // Calculamos el vector de dirección hacia el jugador
-            Vector3 direccionAlJugador = player.position - transform.position;
-            direccionAlJugador.Normalize();
-
-            // Calculamos el ángulo. Restamos 90f porque tu sprite original apunta hacia arriba.
+            Vector3 direccionAlJugador = (player.position - transform.position).normalized;
             float angulo = Mathf.Atan2(direccionAlJugador.y, direccionAlJugador.x) * Mathf.Rad2Deg - 90f;
             Quaternion rotacionDeseada = Quaternion.Euler(0, 0, angulo);
-
-            // Giramos el avión suavemente hacia ese ángulo
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacionDeseada, velocidadRotacion * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(
+                transform.rotation, rotacionDeseada, velocidadRotacion * Time.deltaTime);
         }
 
-        // Avanzar siempre hacia su propio "Adelante"
         transform.Translate(Vector3.up * velocidad * Time.deltaTime);
 
-        // 2. LÍMITES: No salirse del mapa
-        // Mathf.Clamp encierra el valor entre un mínimo y un máximo. Si trata de pasarse, lo frena.
         float posX = Mathf.Clamp(transform.position.x, limiteMinX, limiteMaxX);
         float posY = Mathf.Clamp(transform.position.y, limiteMinY, limiteMaxY);
-        transform.position = new Vector3(posX, posY, transform.position.z);
+        transform.position = new Vector3(posX, posY, 0);
 
-        // 3. DISPARO
-        if (Time.time > proximoDisparo)
+        // FIX: timer propio
+        timerDisparo += Time.deltaTime;
+        if (timerDisparo >= tiempoEntreDisparos)
         {
-            proximoDisparo = Time.time + tiempoEntreDisparos;
+            timerDisparo = 0f;
             Disparar();
         }
     }
 
     void Disparar()
     {
-        // Pedimos una bala enemiga al Pool y la instanciamos con la misma rotación del avioncito
-        ObjectPooler.Instance.SpawnFromPool(tagBalaEnemiga, transform.position, transform.rotation);
+        if (ObjectPooler.Instance != null)
+            ObjectPooler.Instance.SpawnFromPool(tagBalaEnemiga, transform.position, transform.rotation);
     }
 }

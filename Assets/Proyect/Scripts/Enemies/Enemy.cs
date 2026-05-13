@@ -11,22 +11,24 @@ public class Enemy : MonoBehaviour
     [Header("Efectos Visuales")]
     [SerializeField] private GameObject explosionPrefab;
 
-    [Header("Mecánica de Escuadrón (Solo para Zako Rojos)")]
+    [Header("Mecánica de Escuadrón")]
     public RedSquadronManager mySquadron;
 
     private float currentHealth;
     private bool diedByPlayer;
+    private bool yaMurio; // Evita que Die() se llame dos veces
 
     private void OnEnable()
     {
         currentHealth = maxHealth;
         diedByPlayer = false;
+        yaMurio = false;
     }
 
     public void TakeDamage(float damageAmount)
     {
+        if (yaMurio) return;
         currentHealth -= damageAmount;
-
         if (currentHealth <= 0)
         {
             diedByPlayer = true;
@@ -36,29 +38,28 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        // --- 1. AVISO AL PADRE (BARCO O BOSS) ---
-        // Esto es lo que hace que el BattleshipMaster cuente la baja
+        if (yaMurio) return;
+        yaMurio = true;
+
+        LevelManager.ReportarMuerte();
         SendMessageUpwards("TorretaDestruida", SendMessageOptions.DontRequireReceiver);
 
-        // --- 2. LÓGICA DE EXPLOSIÓN ---
-        if (diedByPlayer && explosionPrefab != null)
+        if (diedByPlayer)
         {
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        }
+            // Explosión siempre al morir por el jugador
+            if (explosionPrefab != null)
+                Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
-        // Sumamos puntos
-        if (diedByPlayer && GameManager.Instance != null)
-        {
-            GameManager.Instance.AddScore(scoreValue);
-        }
+            if (GameManager.Instance != null)
+                GameManager.Instance.AddScore(scoreValue);
 
-        // --- 3. AVISO AL ESCUADRÓN ROJO ---
-        if (mySquadron != null)
-        {
-            if (diedByPlayer)
-            {
+            if (mySquadron != null)
                 mySquadron.ReportPlaneKilled(transform.position);
-            }
+        }
+        else
+        {
+            if (mySquadron != null)
+                mySquadron.ReportPlaneEscaped();
         }
 
         gameObject.SetActive(false);
@@ -66,14 +67,14 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Si el jugador nos choca
+        if (yaMurio) return;
         if (collision.CompareTag("Player"))
         {
             PlayerController player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
                 player.TakeDamage(damageToPlayer);
-                diedByPlayer = true;
+                diedByPlayer = false;
                 Die();
             }
         }
@@ -81,10 +82,8 @@ public class Enemy : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        if (!diedByPlayer)
-        {
-            if (mySquadron != null) mySquadron.ReportPlaneEscaped();
-            Die();
-        }
+        if (yaMurio) return;
+        diedByPlayer = false;
+        Die();
     }
 }

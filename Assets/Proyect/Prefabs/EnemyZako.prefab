@@ -211,10 +211,10 @@ MonoBehaviour:
   - {fileID: -929877865, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
   - {fileID: 1856472967, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
   - {fileID: -1873718341, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
-  - {fileID: 15444714, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
+  upSprite: {fileID: 15444714, guid: b0dd26a0d0cd88b4ca529bf1ccb5adc5, type: 3}
   frameRate: 0.1
   speed: 4
-  yTurnThreshold: 0
+  yTurnThreshold: -2
 --- !u!1 &3079388422710849697
 GameObject:
   m_ObjectHideFlags: 0
